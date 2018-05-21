@@ -1,0 +1,24 @@
+From ac06761d49d76ef151a6103f9dc95b34cda4a257 Mon Sep 17 00:00:00 2001
+From: LingJie <lj@shtruecolor.com>
+Date: Fri, 18 May 2018 15:53:24 +0800
+Subject: [PATCH] expose libm.h for ffprobe.so
+
+---
+ libavutil/Makefile | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libavutil/Makefile b/libavutil/Makefile
+index 8d7e84a08f..7d92b6d7e5 100644
+--- a/libavutil/Makefile
++++ b/libavutil/Makefile
+@@ -47,6 +47,7 @@ HEADERS = adler32.h                                                     \
+           intreadwrite.h                                                \
+           lfg.h                                                         \
+           log.h                                                         \
++          libm.h                                                        \
+           macros.h                                                      \
+           mathematics.h                                                 \
+           mastering_display_metadata.h                                  \
+-- 
+2.15.1 (Apple Git-101)
+

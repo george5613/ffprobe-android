@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ffprobe-example</string>
+    <string name="action_settings">Settings</string>
+    <string name="probing_video">probing video…</string>
+    <string name="probe_duration_finish">probe finish duration = %f</string>
+    <string name="probe_format_finish">probe finish format = %s</string>
+    <string name="probe_error">probe error</string>
+</resources>

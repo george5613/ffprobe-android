@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Probe Duration:"/>
+
+        <Button
+            android:id="@+id/btn_duration_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Video"
+            />
+
+        <Button
+            android:id="@+id/btn_duration_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Video"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Probe Format:"/>
+
+        <Button
+            android:id="@+id/btn_format_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Video"
+            />
+
+        <Button
+            android:id="@+id/btn_format_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Video"
+            />
+    </LinearLayout>
+
+</LinearLayout>
