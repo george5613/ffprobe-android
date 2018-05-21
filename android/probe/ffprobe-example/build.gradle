@@ -21,6 +21,23 @@ android {
         }
     }
 
+    flavorDimensions "arch"
+
+    productFlavors {
+        all32 {
+            minSdkVersion 14
+            dimension "arch"
+        }
+        all64 {
+            minSdkVersion 21
+            dimension "arch"
+        }
+        // armv5 {}
+        // armv7a {}
+        // arm64 { minSdkVersion 21 }
+        // x86 {}
+    }
+
 }
 
 dependencies {
@@ -33,8 +50,16 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(':ffprobe-armv5')
-    implementation project(':ffprobe-armv7a')
-    implementation project(':ffprobe-x86')
     implementation project(':ffprobe-java')
+
+    all32Implementation project(':ffprobe-armv5')
+    all32Implementation project(':ffprobe-armv7a')
+    all32Implementation project(':ffprobe-x86')
+
+    all64Implementation project(':ffprobe-armv5')
+    all64Implementation project(':ffprobe-armv7a')
+    all64Implementation project(':ffprobe-arm64')
+    all64Implementation project(':ffprobe-x86')
+    all64Implementation project(':ffprobe-x86_64')
+
 }

@@ -1,5 +1,8 @@
-include ':ffprobe-armv5', ':ffprobe-java'
+include ':ffprobe-armv5'
 include ':ffprobe-armv7a'
+include ':ffprobe-arm64'
 include ':ffprobe-x86'
+include ':ffprobe-x86_64'
+include ':ffprobe-java'
 include ':ffprobe-example'
 
